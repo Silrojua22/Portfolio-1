@@ -1,7 +1,14 @@
+import Nav from "../../common_components/Nav/Nav";
+
 const MainViewPortfolio = () => {
   return (
     <div>
-      <h1>hola</h1>
+      <div>
+        <Nav />
+      </div>
+      <div>
+        <p className="text 3xl">Portfolio</p>
+      </div>
     </div>
   );
 };
