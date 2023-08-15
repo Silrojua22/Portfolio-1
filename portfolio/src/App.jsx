@@ -6,7 +6,7 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route path="/home" element={<MainViewPortfolio />} />
+        <Route path="/" element={<MainViewPortfolio />} />
       </Routes>
     </div>
   );
