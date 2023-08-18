@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
-export default function Nav() {
+function Nav() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -31,7 +31,7 @@ export default function Nav() {
             <li className="px-4 py-2">
               <NavLink
                 to="/"
-                activeClassName="text-accentColor"
+                // activeClassName="text-accentColor"
                 className="text-black no-underline hover:text-accentColor"
                 onClick={toggleMenu}
               >
@@ -41,7 +41,7 @@ export default function Nav() {
             <li className="px-4 py-2">
               <NavLink
                 to="/About"
-                activeClassName="text-accentColor"
+                // activeClassName="text-accentColor"
                 className="text-black no-underline hover:text-accentColor"
                 onClick={toggleMenu}
               >
@@ -51,7 +51,7 @@ export default function Nav() {
             <li className="px-4 py-2">
               <NavLink
                 to="/Skills"
-                activeClassName="text-accentColor"
+                // activeClassName="text-accentColor"
                 className="text-black no-underline hover:text-accentColor"
                 onClick={toggleMenu}
               >
@@ -61,7 +61,7 @@ export default function Nav() {
             <li className="px-4 py-2">
               <NavLink
                 to="/Projects"
-                activeClassName="text-accentColor"
+                // activeClassName="text-accentColor"
                 className="text-black no-underline hover:text-accentColor"
                 onClick={toggleMenu}
               >
@@ -71,7 +71,7 @@ export default function Nav() {
             <li className="px-4 py-2">
               <NavLink
                 to="/Contact"
-                activeClassName="text-accentColor"
+                // activeClassName="text-accentColor"
                 className="text-black no-underline hover:text-accentColor"
                 onClick={toggleMenu}
               >
@@ -85,7 +85,7 @@ export default function Nav() {
         <li className="inline-block">
           <NavLink
             to="/#"
-            activeClassName="border-accentColor"
+            // activeClassName="border-accentColor"
             className="text-black text-lg no-underline hover:text-accentColor"
           >
             Home
@@ -93,8 +93,8 @@ export default function Nav() {
         </li>
         <li className="inline-block">
           <NavLink
-            to="/#About"
-            activeClassName="border-accentColor"
+            to="/About"
+            // activeClassName="border-accentColor"
             className="text-black text-lg no-underline hover:text-accentColor"
           >
             About
@@ -102,8 +102,8 @@ export default function Nav() {
         </li>
         <li className="inline-block">
           <NavLink
-            to="/#Skills"
-            activeClassName="border-accentColor"
+            to="/Skills"
+            // activeClassName="border-accentColor"
             className="text-black text-lg no-underline hover:text-accentColor"
           >
             Skills
@@ -111,8 +111,8 @@ export default function Nav() {
         </li>
         <li className="inline-block">
           <NavLink
-            to="/#Projects"
-            activeClassName="border-accentColor"
+            to="/Projects"
+            // activeClassName="border-accentColor"
             className="text-black text-lg no-underline hover:text-accentColor"
           >
             Projects
@@ -120,8 +120,8 @@ export default function Nav() {
         </li>
         <li className="inline-block">
           <NavLink
-            to="/#Contact"
-            activeClassName="border-accentColor"
+            to="/Contact"
+            // activeClassName="border-accentColor"
             className="text-black text-lg no-underline hover:text-accentColor"
           >
             Contact
@@ -131,3 +131,5 @@ export default function Nav() {
     </nav>
   );
 }
+
+export default Nav;
