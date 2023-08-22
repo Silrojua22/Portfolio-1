@@ -13,11 +13,24 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        {/* <Route path="/about" element={<About />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact" element={<Contact />} /> */}
       </Routes>
+      <section className="about-section">
+        <About />
+      </section>
+      <section className="skills-section">
+        <Skills />
+      </section>
+      <section className="projects-section">
+        <Projects />
+      </section>
+      <section className="contact-section">
+        <Contact />
+      </section>
+      <div style={{ minHeight: "100vh" }}></div>
     </div>
   );
 }

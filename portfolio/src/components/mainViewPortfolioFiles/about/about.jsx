@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import image from "../../../assets/Image-About.jpg";
 
 const About = () => {
@@ -27,7 +27,7 @@ const About = () => {
 
   return (
     <div className="font-mono flex flex-col md:flex-row items-center justify-center h-screen">
-      <div className="w-60 h-60 rounded-full overflow-hidden mb-4 md:mb-0 md:mr-8">
+      <div className="w-80 h-80 rounded-full overflow-hidden mb-4 md:mb-0 md:mr-8">
         <img
           className="w-full h-full object-cover"
           src={image}
@@ -35,8 +35,8 @@ const About = () => {
         />
       </div>
       <div className="text-center md:text-left m-4 md:m-0">
-        <h1 className="text-xl font-bold mb-2 w-40 md:w-auto">{typedText}</h1>
-        <p>Hola soy yo</p>
+        <h1 className="text-2xl font-bold mb-2 w-48 md:w-auto">{typedText}</h1>
+        <p className="text-lg">Hola soy yo</p>
       </div>
     </div>
   );
