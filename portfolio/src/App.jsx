@@ -1,8 +1,7 @@
-import React from "react"; // Asegúrate de importar React si aún no lo has hecho
 import "./App.css";
 import Home from "./components/mainViewPortfolioFiles/home/home";
 import About from "./components/mainViewPortfolioFiles/about/about";
-import Nav from "./components/commonComponents/nav/nav"; // Ruta relativa al archivo Nav
+import Nav from "./components/commonComponents/nav/nav";
 import Skills from "./components/mainViewPortfolioFiles/skills/skills";
 import Projects from "./components/mainViewPortfolioFiles/projects/projects";
 import Contact from "./components/mainViewPortfolioFiles/contact/contact";
