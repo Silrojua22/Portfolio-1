@@ -10,6 +10,12 @@ export default {
       'xl': '1280px', // Extra grande
     }
   },
-  plugins: [],
-}
+  fontFamily: {
+    monospace: ["Roboto Mono", "monospace"],
+    plugins: [
+      require("tailwindcss-animated")
+    ],
 
+  }
+
+};
