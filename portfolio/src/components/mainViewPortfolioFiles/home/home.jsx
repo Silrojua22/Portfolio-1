@@ -25,7 +25,7 @@ const Home = () => {
   }, []);
 
   return (
-    <section className="flex justify-center items-center min-h-screen">
+    <section className="flex justify-center items-center min-h-screen font-mono">
       <div className="text-center">
         <h1 className="text-4xl">
           {typedText}
