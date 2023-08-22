@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import { Link } from "react-router-dom";
 const Home = () => {
   const [typedText, setTypedText] = useState("");
   const fullText = "Hi! My name is Silvio Rodrigo Juarez";
@@ -25,7 +25,7 @@ const Home = () => {
   }, []);
 
   return (
-    <section className=" font-mono min-h-screen w-screen flex justify-center items-center overflow-hidden">
+    <section className="flex justify-center items-center min-h-screen">
       <div className="text-center">
         <h1 className="text-4xl">
           {typedText}
@@ -39,9 +39,7 @@ const Home = () => {
           )}
         </div>
         <p>
-          <a rel="noreferrer" href="/about">
-            About me
-          </a>
+          <Link to="/about">About me</Link>
         </p>
       </div>
     </section>
