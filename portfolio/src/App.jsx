@@ -1,6 +1,6 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import Home from "./components/main_view_portfolio_files/home/home";
+import Home from "./components/mainViewPortfolioFiles/home/home";
 import About from "./components/main_view_portfolio_files/about/about";
 import Nav from "../src/components/common_components/nav/nav";
 import Skills from "./components/main_view_portfolio_files/skills/skills";
