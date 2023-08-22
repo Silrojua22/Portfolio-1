@@ -6,6 +6,8 @@ import Nav from "../src/components/common_components/nav/nav";
 import Skills from "./components/main_view_portfolio_files/skills/skills";
 import Projects from "./components/main_view_portfolio_files/projects/projects";
 import Contact from "./components/main_view_portfolio_files/contact/contact";
+import axios from "axios";
+axios.defaults.baseURL = "http://localhost:5173";
 
 function App() {
   return (
