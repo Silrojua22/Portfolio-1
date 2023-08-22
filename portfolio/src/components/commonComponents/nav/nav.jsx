@@ -1,6 +1,7 @@
-import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import React, { useState } from "react";
+import { Link } from "react-scroll";
 import logo from "../../../assets/logo.png";
+
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -9,8 +10,8 @@ export default function Nav() {
   };
 
   return (
-    <nav className=" font-mono flex justify-between items-center h-20 w-full bg-white shadow-md">
-      <Link to="/" className="ml-8 text-xl">
+    <nav className="sticky top-0 z-50 font-mono flex justify-between items-center h-20 w-full bg-white shadow-md">
+      <Link to="home-section" className="ml-8 text-xl">
         <img src={logo} alt="Logo" className="h-20" />
       </Link>
       <div className="md:hidden">
@@ -29,103 +30,103 @@ export default function Nav() {
         {isOpen && (
           <ul className="absolute top-16 right-0 mt-2 bg-white shadow-md border border-gray-200 divide-y divide-gray-300">
             <li className="px-4 py-2">
-              <NavLink
-                to="/"
-                // activeClassName="text-accentColor"
-                className="text-black no-underline hover:text-accentColor"
+              <Link
+                to="home-section"
+                smooth={true}
+                className="block text-black no-underline hover:text-accentColor"
                 onClick={toggleMenu}
               >
                 Home
-              </NavLink>
+              </Link>
             </li>
             <li className="px-4 py-2">
-              <NavLink
-                to="/About"
-                // activeClassName="text-accentColor"
-                className="text-black no-underline hover:text-accentColor"
+              <Link
+                to="about-section"
+                smooth={true}
+                className="block text-black no-underline hover:text-accentColor"
                 onClick={toggleMenu}
               >
                 About
-              </NavLink>
+              </Link>
             </li>
             <li className="px-4 py-2">
-              <NavLink
-                to="/Skills"
-                // activeClassName="text-accentColor"
-                className="text-black no-underline hover:text-accentColor"
+              <Link
+                to="skills-section"
+                smooth={true}
+                className="block text-black no-underline hover:text-accentColor"
                 onClick={toggleMenu}
               >
                 Skills
-              </NavLink>
+              </Link>
             </li>
             <li className="px-4 py-2">
-              <NavLink
-                to="/Projects"
-                // activeClassName="text-accentColor"
-                className="text-black no-underline hover:text-accentColor"
+              <Link
+                to="projects-section"
+                smooth={true}
+                className="block text-black no-underline hover:text-accentColor"
                 onClick={toggleMenu}
               >
                 Projects
-              </NavLink>
+              </Link>
             </li>
             <li className="px-4 py-2">
-              <NavLink
-                to="/Contact"
-                // activeClassName="text-accentColor"
-                className="text-black no-underline hover:text-accentColor"
+              <Link
+                to="contact-section"
+                smooth={true}
+                className="block text-black no-underline hover:text-accentColor"
                 onClick={toggleMenu}
               >
                 Contact
-              </NavLink>
+              </Link>
             </li>
           </ul>
         )}
       </div>
       <ul className="hidden md:flex space-x-8">
-        <li className="inline-block">
-          <NavLink
-            to="/#"
-            // activeClassName="border-accentColor"
+        <li>
+          <Link
+            to="home-section"
+            smooth={true}
             className="text-black text-lg no-underline hover:text-accentColor"
           >
             Home
-          </NavLink>
+          </Link>
         </li>
-        <li className="inline-block">
-          <NavLink
-            to="/About"
-            // activeClassName="border-accentColor"
+        <li>
+          <Link
+            to="about-section"
+            smooth={true}
             className="text-black text-lg no-underline hover:text-accentColor"
           >
             About
-          </NavLink>
+          </Link>
         </li>
-        <li className="inline-block">
-          <NavLink
-            to="/Skills"
-            // activeClassName="border-accentColor"
+        <li>
+          <Link
+            to="skills-section"
+            smooth={true}
             className="text-black text-lg no-underline hover:text-accentColor"
           >
             Skills
-          </NavLink>
+          </Link>
         </li>
-        <li className="inline-block">
-          <NavLink
-            to="/Projects"
-            // activeClassName="border-accentColor"
+        <li>
+          <Link
+            to="projects-section"
+            smooth={true}
             className="text-black text-lg no-underline hover:text-accentColor"
           >
             Projects
-          </NavLink>
+          </Link>
         </li>
-        <li className="inline-block">
-          <NavLink
-            to="/Contact"
-            // activeClassName="border-accentColor"
+        <li>
+          <Link
+            to="contact-section"
+            smooth={true}
             className="text-black text-lg no-underline hover:text-accentColor"
           >
             Contact
-          </NavLink>
+          </Link>
         </li>
       </ul>
     </nav>
