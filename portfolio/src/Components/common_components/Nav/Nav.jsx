@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-
-function Nav() {
+import logo from "../../../assets/logo.png";
+export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -9,9 +9,9 @@ function Nav() {
   };
 
   return (
-    <nav className="flex justify-between items-center h-20 w-full bg-white shadow-md">
+    <nav className=" font-mono flex justify-between items-center h-20 w-full bg-white shadow-md">
       <Link to="/" className="ml-8 text-xl">
-        Logo
+        <img src={logo} alt="Logo" className="h-20" />
       </Link>
       <div className="md:hidden">
         <button
@@ -131,5 +131,3 @@ function Nav() {
     </nav>
   );
 }
-
-export default Nav;
