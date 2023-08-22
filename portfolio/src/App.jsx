@@ -1,6 +1,6 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import Home from "./components/main_view_portfolio_files/Home/Home.jsx";
+// import Home from "./components/main_view_portfolio_files/Home/Home.jsx";
 import About from "./components/main_view_portfolio_files/about/about.jsx";
 import Nav from "../src/components/common_components/nav/nav.jsx";
 import Skills from "./components/main_view_portfolio_files/skills/skills.jsx";
@@ -14,7 +14,7 @@ function App() {
     <div>
       <Nav />
       <Routes>
-        <Route path="/" element={<Home />} />
+        {/* <Route path="/" element={<Home />} /> */}
         <Route path="/about" element={<About />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/projects" element={<Projects />} />
