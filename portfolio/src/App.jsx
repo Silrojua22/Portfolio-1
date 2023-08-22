@@ -1,11 +1,13 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import Home from "./Components/Main_view_portfolio_files/Home/Home";
-import About from "./Components/Main_view_portfolio_files/About/About";
-import Nav from "../src/components/common_components/nav/nav";
-import Skills from "./components/main_view_portfolio_files/skills/skills";
-import Projects from "./components/main_view_portfolio_files/projects/projects";
-import Contact from "./components/main_view_portfolio_files/contact/contact";
+import Home from "./components/main_view_portfolio_files/home/home.jsx";
+import About from "./components/main_view_portfolio_files/about/about.jsx";
+import Nav from "../src/components/common_components/nav/nav.jsx";
+import Skills from "./components/main_view_portfolio_files/skills/skills.jsx";
+import Projects from "./components/main_view_portfolio_files/projects/projects.jsx";
+import Contact from "./components/main_view_portfolio_files/contact/contact.jsx";
+import axios from "axios";
+axios.defaults.baseURL = "http://localhost:5173";
 
 function App() {
   return (
