@@ -41,11 +41,11 @@ const About = () => {
       observer.observe(aboutSectionRef.current);
     }
 
-    return () => {
-      if (aboutSectionRef.current) {
-        observer.unobserve(aboutSectionRef.current);
-      }
-    };
+    // return () => {
+    //   if (aboutSectionRef.current) {
+    //     observer.unobserve(aboutSectionRef.current);
+    //   }
+    // };
   }, []);
 
   return (
