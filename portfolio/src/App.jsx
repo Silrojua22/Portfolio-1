@@ -9,7 +9,7 @@ import Contact from "./components/mainViewPortfolioFiles/contact/contact";
 function App() {
   return (
     <div>
-      <Nav /> {/* Muestra la barra de navegación en todas las secciones */}
+      <Nav />
       <div id="home-section">
         <Home />
       </div>
