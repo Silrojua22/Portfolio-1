@@ -26,7 +26,7 @@ const Home = () => {
   }, []);
 
   return (
-    <section className="flex justify-center items-center min-h-screen font-mono">
+    <section className="flex justify-center items-center min-h-screen font-mono text-green-700">
       <div className="text-center">
         <h1 className="text-4xl">
           {typedText}
@@ -34,8 +34,12 @@ const Home = () => {
         </h1>
         <div className="my-4">
           {typedText === fullText && (
-            <div className="animate-jump animate-once animate-duration-50000 animate-delay-20000 inline-block">
-              <h1 className="text-4xl">Full Stack Web Developer.</h1>
+            <div className="inline-block">
+              <h1 className="text-4xl">
+                <span className="text-green-700 border-b-4 border-black">
+                  Full Stack Web Developer.
+                </span>
+              </h1>
             </div>
           )}
         </div>
@@ -43,7 +47,7 @@ const Home = () => {
           <Link
             to="about-section"
             smooth={true}
-            className="inline-block text-black no-underline hover:text-accentColor cursor-pointer"
+            className="inline-block text-green-700 no-underline hover:text-accentColor cursor-pointer"
           >
             About me
           </Link>
