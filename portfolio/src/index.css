@@ -23,7 +23,7 @@ body {
 }
 
 body {
-  background-color: gray; /* for development */
+  background-color: #222222; /* for development */
   background-size: cover;
   height: auto;
   background-repeat: no-repeat;

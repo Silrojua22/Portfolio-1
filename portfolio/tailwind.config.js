@@ -8,7 +8,8 @@ export default {
       'md': '768px', // Mediano
       'lg': '1024px', // Grande
       'xl': '1280px', // Extra grande
-    }
+    },
+
   },
   fontFamily: {
     monospace: ["Roboto Mono", "monospace"],

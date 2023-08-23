@@ -11,8 +11,9 @@ export default function Nav() {
 
   return (
     <nav className="sticky top-0 z-50 font-mono flex justify-between items-center h-20 w-full bg-white shadow-md">
-      <Link to="home-section" className="ml-8 text-xl">
-        <img src={logo} alt="Logo" className="h-20" />
+      <Link to="home-section" className="text-xl flex items-center">
+        <img src={logo} alt="Logo" className="h-12 mr-2" />
+        <span className="text-xl font-semibold text-green-700">S.R.J.</span>
       </Link>
       <div className="md:hidden">
         <button
@@ -33,7 +34,7 @@ export default function Nav() {
               <Link
                 to="home-section"
                 smooth={true}
-                className="block text-black no-underline hover:text-accentColor"
+                className="block text-black no-underline hover:text-green-700"
                 onClick={toggleMenu}
               >
                 Home
@@ -43,7 +44,7 @@ export default function Nav() {
               <Link
                 to="about-section"
                 smooth={true}
-                className="block text-black no-underline hover:text-accentColor"
+                className="block text-black no-underline hover:text-green-700"
                 onClick={toggleMenu}
               >
                 About
@@ -53,7 +54,7 @@ export default function Nav() {
               <Link
                 to="skills-section"
                 smooth={true}
-                className="block text-black no-underline hover:text-accentColor"
+                className="block text-black no-underline hover:text-green-700"
                 onClick={toggleMenu}
               >
                 Skills
@@ -63,7 +64,7 @@ export default function Nav() {
               <Link
                 to="projects-section"
                 smooth={true}
-                className="block text-black no-underline hover:text-accentColor"
+                className="block text-black no-underline hover:text-green-700"
                 onClick={toggleMenu}
               >
                 Projects
@@ -73,7 +74,7 @@ export default function Nav() {
               <Link
                 to="contact-section"
                 smooth={true}
-                className="block text-black no-underline hover:text-accentColor"
+                className="block text-black no-underline hover:text-green-700"
                 onClick={toggleMenu}
               >
                 Contact
@@ -87,7 +88,7 @@ export default function Nav() {
           <Link
             to="home-section"
             smooth={true}
-            className="text-black text-lg no-underline hover:text-accentColor cursor-pointer"
+            className="text-black text-lg no-underline hover:text-green-700 cursor-pointer"
           >
             Home
           </Link>
@@ -96,7 +97,7 @@ export default function Nav() {
           <Link
             to="about-section"
             smooth={true}
-            className="text-black text-lg no-underline hover:text-accentColor cursor-pointer"
+            className="text-black text-lg no-underline hover:text-green-700 cursor-pointer"
           >
             About
           </Link>
@@ -105,7 +106,7 @@ export default function Nav() {
           <Link
             to="skills-section"
             smooth={true}
-            className="text-black text-lg no-underline hover:text-accentColor cursor-pointer"
+            className="text-black text-lg no-underline hover:text-green-700 cursor-pointer"
           >
             Skills
           </Link>
@@ -114,7 +115,7 @@ export default function Nav() {
           <Link
             to="projects-section"
             smooth={true}
-            className="text-black text-lg no-underline hover:text-accentColor cursor-pointer"
+            className="text-black text-lg no-underline hover:text-green-700 cursor-pointer"
           >
             Projects
           </Link>
@@ -123,7 +124,7 @@ export default function Nav() {
           <Link
             to="contact-section"
             smooth={true}
-            className="text-black text-lg no-underline hover:text-accentColor cursor-pointer"
+            className="text-black text-lg no-underline hover:text-green-700 cursor-pointer"
           >
             Contact
           </Link>
