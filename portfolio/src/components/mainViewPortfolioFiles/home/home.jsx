@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
+
 const Home = () => {
   const [typedText, setTypedText] = useState("");
   const fullText = "Hi! My name is Silvio Rodrigo Juarez";
@@ -39,7 +40,13 @@ const Home = () => {
           )}
         </div>
         <p>
-          <Link to="/about">About me</Link>
+          <Link
+            to="about-section"
+            smooth={true}
+            className="inline-block text-black no-underline hover:text-accentColor cursor-pointer"
+          >
+            About me
+          </Link>
         </p>
       </div>
     </section>
