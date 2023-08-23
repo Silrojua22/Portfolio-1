@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-scroll";
-import logo from "../../../assets/logo.png";
+import logo from "../../../assets/logo-1.png";
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -87,7 +87,7 @@ export default function Nav() {
           <Link
             to="home-section"
             smooth={true}
-            className="text-black text-lg no-underline hover:text-accentColor"
+            className="text-black text-lg no-underline hover:text-accentColor cursor-pointer"
           >
             Home
           </Link>
@@ -96,7 +96,7 @@ export default function Nav() {
           <Link
             to="about-section"
             smooth={true}
-            className="text-black text-lg no-underline hover:text-accentColor"
+            className="text-black text-lg no-underline hover:text-accentColor cursor-pointer"
           >
             About
           </Link>
@@ -105,7 +105,7 @@ export default function Nav() {
           <Link
             to="skills-section"
             smooth={true}
-            className="text-black text-lg no-underline hover:text-accentColor"
+            className="text-black text-lg no-underline hover:text-accentColor cursor-pointer"
           >
             Skills
           </Link>
@@ -114,7 +114,7 @@ export default function Nav() {
           <Link
             to="projects-section"
             smooth={true}
-            className="text-black text-lg no-underline hover:text-accentColor"
+            className="text-black text-lg no-underline hover:text-accentColor cursor-pointer"
           >
             Projects
           </Link>
@@ -123,7 +123,7 @@ export default function Nav() {
           <Link
             to="contact-section"
             smooth={true}
-            className="text-black text-lg no-underline hover:text-accentColor"
+            className="text-black text-lg no-underline hover:text-accentColor cursor-pointer"
           >
             Contact
           </Link>
