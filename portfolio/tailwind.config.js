@@ -4,10 +4,10 @@ export default {
   theme: {
     extend: {},
     screens: {
-      'sm': '640px', // Pequeño
-      'md': '768px', // Mediano
-      'lg': '1024px', // Grande
-      'xl': '1280px', // Extra grande
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
     },
 
   },

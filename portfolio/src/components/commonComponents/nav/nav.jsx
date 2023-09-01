@@ -10,10 +10,12 @@ export default function Nav() {
   };
 
   return (
-    <nav className="sticky top-0 z-50 font-mono flex justify-between items-center h-20 w-full bg-white shadow-md">
+    <nav className="sticky top-0 z-50 font-mono flex justify-between items-center h-20 w-full bg-black backdrop:shadow-md">
       <Link to="home-section" className="text-xl flex items-center">
         <img src={logo} alt="Logo" className="h-12 mr-2" />
-        <span className="text-xl font-semibold text-green-700">S.R.J.</span>
+        <span className="text-xl font-semibold text-white hover:text-green-700 cursor-pointer">
+          S.R.J.
+        </span>
       </Link>
       <div className="md:hidden">
         <button
@@ -21,7 +23,7 @@ export default function Nav() {
           className="p-2 focus:outline-none focus:bg-gray-200"
         >
           <svg
-            className="w-6 h-6 fill-current text-black"
+            className="w-6 h-6 fill-current text-white"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
           >
@@ -34,7 +36,7 @@ export default function Nav() {
               <Link
                 to="home-section"
                 smooth={true}
-                className="block text-black no-underline hover:text-green-700"
+                className="block text-green-700 no-underline hover:text-green-700"
                 onClick={toggleMenu}
               >
                 Home
@@ -44,7 +46,7 @@ export default function Nav() {
               <Link
                 to="about-section"
                 smooth={true}
-                className="block text-black no-underline hover:text-green-700"
+                className="block text-green-700 no-underline hover:text-green-700"
                 onClick={toggleMenu}
               >
                 About
@@ -54,7 +56,7 @@ export default function Nav() {
               <Link
                 to="skills-section"
                 smooth={true}
-                className="block text-black no-underline hover:text-green-700"
+                className="block text-green-700 no-underline hover:text-green-700"
                 onClick={toggleMenu}
               >
                 Skills
@@ -64,7 +66,7 @@ export default function Nav() {
               <Link
                 to="projects-section"
                 smooth={true}
-                className="block text-black no-underline hover:text-green-700"
+                className="block text-green-700 no-underline hover:text-green-700"
                 onClick={toggleMenu}
               >
                 Projects
@@ -74,7 +76,7 @@ export default function Nav() {
               <Link
                 to="contact-section"
                 smooth={true}
-                className="block text-black no-underline hover:text-green-700"
+                className="block text-green-700 no-underline hover:text-green-700"
                 onClick={toggleMenu}
               >
                 Contact
@@ -83,12 +85,12 @@ export default function Nav() {
           </ul>
         )}
       </div>
-      <ul className="hidden md:flex space-x-8">
+      <ul className="hidden md:flex space-x-8 mr-4">
         <li>
           <Link
             to="home-section"
             smooth={true}
-            className="text-black text-lg no-underline hover:text-green-700 cursor-pointer"
+            className="text-white text-lg no-underline hover:text-green-700 cursor-pointer"
           >
             Home
           </Link>
@@ -97,7 +99,7 @@ export default function Nav() {
           <Link
             to="about-section"
             smooth={true}
-            className="text-black text-lg no-underline hover:text-green-700 cursor-pointer"
+            className="text-white text-lg no-underline hover:text-green-700 cursor-pointer"
           >
             About
           </Link>
@@ -106,7 +108,7 @@ export default function Nav() {
           <Link
             to="skills-section"
             smooth={true}
-            className="text-black text-lg no-underline hover:text-green-700 cursor-pointer"
+            className="text-white text-lg no-underline hover:text-green-700 cursor-pointer"
           >
             Skills
           </Link>
@@ -115,7 +117,7 @@ export default function Nav() {
           <Link
             to="projects-section"
             smooth={true}
-            className="text-black text-lg no-underline hover:text-green-700 cursor-pointer"
+            className="text-white text-lg no-underline hover:text-green-700 cursor-pointer"
           >
             Projects
           </Link>
@@ -124,7 +126,7 @@ export default function Nav() {
           <Link
             to="contact-section"
             smooth={true}
-            className="text-black text-lg no-underline hover:text-green-700 cursor-pointer"
+            className="text-white text-lg no-underline hover:text-green-700 cursor-pointer"
           >
             Contact
           </Link>

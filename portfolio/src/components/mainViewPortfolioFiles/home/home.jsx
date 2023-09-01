@@ -18,7 +18,7 @@ const Home = () => {
           setTypedText(fullText);
         }, 2000);
       }
-    }, 50);
+    }, 70);
 
     return () => {
       clearInterval(interval);
