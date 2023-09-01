@@ -58,7 +58,7 @@ const About = () => {
 
       <div className="text-center md:text-left m-4 md:m-20 ">
         <h2
-          className={`text-2xl font-bold mb-2 md:w-auto text-green-700 ${
+          className={`text-2xl font-mono font-bold mb-2 md:w-auto text-green-700 ${
             typedText && "mx-auto md:mx-0"
           }`}
         >
@@ -69,8 +69,7 @@ const About = () => {
             Hello! I'm Silvio, a passionate developer who loves to create
             amazing web experiences. I specialize in back-end development and
             have a solid command of modern web technologies like Node.js,
-            Express, SQL, Postgres and have also implemented technologies like
-            Mercado Pago and Nodemailer for notifications.
+            Express, SQL, Postgres.
           </p>
           <p className="text-lg mb-6">
             I have a solid track record as a sales and customer experience
