@@ -47,7 +47,7 @@ const Home = () => {
           <Link
             to="about-section"
             smooth={true}
-            className="inline-block text-green-700 no-underline hover:text-accentColor cursor-pointer"
+            className="inline-block text-green-700 no-underline hover:text-accentColor cursor-pointer text-2xl"
           >
             About me
           </Link>
