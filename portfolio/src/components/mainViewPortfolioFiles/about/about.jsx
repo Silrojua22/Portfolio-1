@@ -69,7 +69,7 @@ const About = () => {
             Hello! I'm Silvio, a passionate developer who loves to create
             amazing web experiences. I specialize in back-end development and
             have a solid command of modern web technologies like Node.js,
-            Express, SQL, Postgres.
+            Express, SQL, PostgreSQL.
           </p>
           <p className="text-lg mb-6">
             I have a solid track record as a sales and customer experience
