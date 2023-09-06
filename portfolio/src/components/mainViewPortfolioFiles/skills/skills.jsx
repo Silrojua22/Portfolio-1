@@ -27,6 +27,37 @@ const Skills = () => {
     };
   }, []);
 
+  const renderIconForTech = (tech) => {
+    switch (tech) {
+      case "React":
+        return <DiReact className="text-blue-400 text-7xl" />;
+      case "HTML/CSS":
+        return (
+          <div>
+            <DiHtml5 className="text-orange-500 text-7xl " />
+            <DiCss3Full className="text-blue-700 text-7xl" />
+          </div>
+        );
+      case "Redux":
+        return <TbBrandRedux className="text-violet-500 text-7xl" />;
+      case "TailwindCss":
+        return <SiTailwindcss className="text-teal-400 text-7xl" />;
+      case "Node.js":
+      case "Express":
+        return <IoLogoNodejs className="text-green-500 text-7xl" />;
+      case "Nodemailer":
+        return <SiMinutemailer className="text-green-500 text-7xl" />;
+      case "PostgreSQL":
+        return <BiLogoPostgresql className="text-blue-400 text-7xl" />;
+      case "SQL":
+        return <AiOutlineConsoleSql className="text-green-500 text-7xl" />;
+      case "Sequelize":
+        return <SiSequelize className="text-teal-400 text-7xl" />;
+      default:
+        return null;
+    }
+  };
+
   const renderTechnologySection = (title, technologies) => {
     return (
       <div className="text-center">
@@ -55,39 +86,7 @@ const Skills = () => {
                 key={index}
                 className="swiper-slide flex flex-col items-center justify-center rounded-lg bg-black border-2 border-green-700"
               >
-                {tech === "React" && (
-                  <DiReact className="text-blue-400 text-7xl" />
-                )}
-                {tech === "HTML/CSS" && (
-                  <DiHtml5 className="text-orange-500 text-7xl " />
-                )}
-                {tech === "HTML/CSS" && (
-                  <DiCss3Full className="text-blue-500 text-7xl" />
-                )}
-                {tech === "Redux" && (
-                  <TbBrandRedux className="text-violet-500 text-7xl" />
-                )}
-                {tech === "TailwindCss" && (
-                  <SiTailwindcss className="text-teal-400 text-7xl" />
-                )}
-                {tech === "Node.js" && (
-                  <IoLogoNodejs className="text-green-500 text-7xl" />
-                )}
-                {tech === "Express" && (
-                  <IoLogoNodejs className="text-green-500 text-7xl" />
-                )}
-                {tech === "Nodemailer" && (
-                  <SiMinutemailer className="text-green-500 text-7xl" />
-                )}
-                {tech === "PostgreSQL" && (
-                  <BiLogoPostgresql className="text-blue-400 text-7xl" />
-                )}
-                {tech === "SQL" && (
-                  <AiOutlineConsoleSql className="text-green-500 text-7xl" />
-                )}
-                {tech === "Sequelize" && (
-                  <SiSequelize className="text-teal-400 text-7xl" />
-                )}
+                {renderIconForTech(tech)}
                 <div className="mt-2 text-green-700 font-bold font-mono">
                   {tech}
                 </div>
