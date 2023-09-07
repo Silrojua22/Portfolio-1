@@ -3,14 +3,9 @@ import Project from "./project.jsx";
 
 function ProjectContainer() {
   return (
-    <div>
+    <div className="grid grid-cols-2 gap-4">
       {projectData.map((project) => (
-        <Project
-          key={project.id}
-          title={project.title}
-          description={project.description}
-          img={project.img}
-        />
+        <Project key={project.id} title={project.title} img={project.img} />
       ))}
     </div>
   );
