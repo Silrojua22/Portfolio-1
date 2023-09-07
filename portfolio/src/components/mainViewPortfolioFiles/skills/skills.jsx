@@ -48,7 +48,7 @@ const Skills = () => {
       case "Nodemailer":
         return <SiMinutemailer className="text-green-500 text-7xl" />;
       case "PostgreSQL":
-        return <BiLogoPostgresql className="text-blue-400 text-7xl" />;
+        return <BiLogoPostgresql className="text-blue-500 text-7xl" />;
       case "SQL":
         return <AiOutlineConsoleSql className="text-green-500 text-7xl" />;
       case "Sequelize":

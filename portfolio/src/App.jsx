@@ -1,31 +1,34 @@
-import "./App.css";
 import Home from "./components/mainViewPortfolioFiles/home/home";
 import About from "./components/mainViewPortfolioFiles/about/about";
 import Nav from "./components/commonComponents/nav/nav";
 import Skills from "./components/mainViewPortfolioFiles/skills/skills";
 import Projects from "./components/mainViewPortfolioFiles/projects/projects";
 import Contact from "./components/mainViewPortfolioFiles/contact/contact";
+import { Route, Routes } from "react-router-dom";
+import DetailProject from "./components/mainViewPortfolioFiles/detailProjects/detailProject.jsx";
 
 function App() {
   return (
-    <div>
+    <div className="min-h-screen flex flex-col">
       <Nav />
-      <div id="home-section">
+      <div id="home-section" className="flex-grow bg-gray-800">
         <Home />
       </div>
-      <div id="about-section" className="about-section">
+      <div id="about-section" className="flex-grow bg-gray-800">
         <About />
       </div>
-      <div id="skills-section" className="skills-section">
+      <div id="skills-section" className="flex-grow bg-gray-800">
         <Skills />
       </div>
-      <div id="projects-section" className="projects-section">
+      <div id="projects-section" className="flex-grow bg-gray-800">
         <Projects />
       </div>
-      <div id="contact-section" className="contact-section">
+      <div id="contact-section" className="flex-grow bg-gray-800">
         <Contact />
       </div>
-      <div style={{ minHeight: "100vh" }}></div>
+      <Routes>
+        <Route path="/detail-project" element={DetailProject} />
+      </Routes>
     </div>
   );
 }
