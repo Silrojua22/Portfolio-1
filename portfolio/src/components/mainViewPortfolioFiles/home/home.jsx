@@ -1,10 +1,13 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { Link } from "react-scroll";
-
+import About from "../about/about.jsx";
+import Skills from "../skills/skills.jsx";
+import Projects from "../projects/projects.jsx";
+import Contact from "../contact/contact.jsx";
 const Home = () => {
   const [typedText, setTypedText] = useState("");
   const fullText = "Hi! My name is Silvio Rodrigo Juarez";
-
+  const homeSectionRef = useRef(null);
   useEffect(() => {
     let currentIndex = 0;
 
@@ -26,8 +29,12 @@ const Home = () => {
   }, []);
 
   return (
-    <section className="flex justify-center items-center min-h-screen font-mono text-green-700">
-      <div className="text-center">
+    <section
+      id="home-section"
+      ref={homeSectionRef}
+      className=" justify-center items-center min-h-screen font-mono text-green-700 grid gird cols-3"
+    >
+      <div className="text-center w-screen h-screen flex flex-col items-center justify-center">
         <h1 className="text-4xl">
           {typedText}
           <br />
@@ -52,6 +59,13 @@ const Home = () => {
             About me
           </Link>
         </p>
+      </div>
+
+      <div>
+        <About />
+        <Skills />
+        <Projects />
+        <Contact className="h-4/6" />
       </div>
     </section>
   );
