@@ -1,5 +1,3 @@
-import { projectData } from "../../commonComponents/projectComponents/projectData.js";
-
 const DetailProject = () => {
   return (
     <div>
