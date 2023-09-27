@@ -11,24 +11,27 @@ const Contact = () => {
       ref={contactSectionRef}
       className="w-screen h-screen flex flex-col justify-center items-center font-mono bg-black border-2 border-green-700"
     >
-      <div className="text-center">
-        <h1 className="text-2xl md:text-2xl lg:text-2xl font-bold">Contact</h1>
+      <div className="text-center flex flex-col justify-center items-center ">
+        <h1 className="text-2xl md:text-2xl lg:text-2xl font-bold underline">
+          Contact
+        </h1>
+        <p className="text-2xl md:text-2xl lg:text-2xl mt-4 ">
+          Contact me if you want us to work together
+        </p>
       </div>
-      <div>
-        <p>Hola estas son las desc</p>
-      </div>
-      <div className="grid grid-cols-4 gap-4 items-center justify-center cursor-pointer mt-4">
+
+      <div className="grid grid-cols-4 gap-8 items-center justify-center cursor-pointer mt-10">
         <div className="rounded-full border-2 border-green-700 bg-black p-2">
-          <BiLogoGmail className="text-xl cursor-pointer text-green-700" />
+          <BiLogoGmail className="text-4xl cursor-pointer text-green-700" />
         </div>
         <div className="rounded-full border-2 border-green-700 bg-black p-2">
-          <AiFillGithub className="text-xl cursor-pointer text-green-700" />
+          <AiFillGithub className="text-4xl cursor-pointer text-green-700" />
         </div>
         <div className="rounded-full border-2 border-green-700 bg-black p-2">
-          <AiFillInstagram className="text-xl cursor-pointer text-green-700" />
+          <AiFillInstagram className="text-4xl cursor-pointer text-green-700" />
         </div>
         <div className="rounded-full border-2 border-green-700 bg-black p-2">
-          <AiFillLinkedin className="text-xl cursor-pointer text-green-700" />
+          <AiFillLinkedin className="text-4xl cursor-pointer text-green-700" />
         </div>
       </div>
     </section>

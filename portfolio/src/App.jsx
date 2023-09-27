@@ -6,7 +6,8 @@ import DetailProject from "./components/mainViewPortfolioFiles/detailProject/det
 function App() {
   const location = useLocation();
 
-  const hideNav = location.pathname === "/detailProject/:projectId";
+  // Corregimos la condición para ocultar la navegación en "/detailProject"
+  const hideNav = location.pathname.startsWith("/detailProject/");
 
   return (
     <div>
