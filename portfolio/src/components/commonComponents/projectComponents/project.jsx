@@ -16,7 +16,7 @@ function Project({ id, name, img, description, allproject }) {
   };
 
   const handleMoreInfoClick = () => {
-    navigate("/detailProject");
+    navigate(`/detailProject/${id}`); // Utilizar el ID del proyecto en la URL
   };
 
   useEffect(() => {
@@ -25,7 +25,7 @@ function Project({ id, name, img, description, allproject }) {
         setIsItem(true);
       }
     });
-  }, []);
+  }, [id, projectDetail]);
 
   return (
     <div
@@ -35,7 +35,6 @@ function Project({ id, name, img, description, allproject }) {
     >
       <h2 className="font-mono font-bold text-green-700 text-2xl py-6">
         {name}
-        {description}
       </h2>
       <img
         src={img}

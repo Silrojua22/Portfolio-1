@@ -1,16 +1,25 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import ProjectContainer from "../../commonComponents/projectComponents/projectContainer.jsx";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { getProjects } from "../../../redux/projectActions.js";
+import DetailProject from "../../mainViewPortfolioFiles/detailProject/detailProject.jsx";
 
 const Projects = () => {
   const projectSection = useRef(null);
   const dispatch = useDispatch();
-  // const allProjects = useSelector((state) => state.projectReducer.allProjects);
+  const [selectedProject, setSelectedProject] = useState(null);
 
   useEffect(() => {
     dispatch(getProjects());
   }, [dispatch]);
+
+  const handleProjectClick = (project) => {
+    setSelectedProject(project);
+  };
+
+  const handleBackToProjects = () => {
+    setSelectedProject(null);
+  };
 
   return (
     <section
@@ -23,9 +32,16 @@ const Projects = () => {
           Projects
         </h2>
       </div>
-      <div className="flex justify-center items-center w-full">
-        <ProjectContainer />
-      </div>
+      {selectedProject ? (
+        <DetailProject
+          project={selectedProject}
+          onBack={handleBackToProjects}
+        />
+      ) : (
+        <div className="flex justify-center items-center w-full">
+          <ProjectContainer onProjectClick={handleProjectClick} />
+        </div>
+      )}
     </section>
   );
 };
