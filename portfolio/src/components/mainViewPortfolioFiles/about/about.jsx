@@ -64,6 +64,7 @@ const About = () => {
         >
           {typedText}
         </h2>
+
         <div className="max-w-md mx-auto md:mx-0 text-white">
           <p className="text-lg mb-6">
             Hello! I'm Silvio, a passionate developer who loves to create
@@ -82,13 +83,12 @@ const About = () => {
             reading tech blogs, and experimenting with new coding projects.
           </p>
 
-          {/* Enlaces aquí */}
           <div className="mt-4">
             <span className="ml-10">
               <a
                 rel="noreferrer"
                 target="_blank"
-                href="src/assets/Silvio Juarez CV-English.pdf"
+                href="/Silvio Juarez CV-English.pdf"
                 className="text-green-700 hover:underline p-4"
               >
                 Resume English
@@ -99,7 +99,7 @@ const About = () => {
               <a
                 rel="noreferrer"
                 target="_blank"
-                href="src/assets/CV- Silvio Juarez - Fullstack developer.pdf"
+                href="/CV- Silvio Juarez - Fullstack developer.pdf"
                 className="text-green-700 hover:underline p-4"
               >
                 Resume Spanish
