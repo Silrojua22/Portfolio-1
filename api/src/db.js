@@ -10,6 +10,7 @@ const sequelize = new Sequelize(
 );
 
 
+
 ProjectFunction(sequelize);
 
 const { Project } = sequelize.models;

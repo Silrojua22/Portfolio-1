@@ -8,7 +8,7 @@ import {
 
 export const getProjects = () => async (dispatch) => {
     try {
-        const response = await axios.get("http://localhost:3001/project");
+        const response = await axios.get("/project");
         const allProjects = response.data;
         dispatch(getAllProjects(allProjects));
     } catch (error) {
@@ -20,7 +20,7 @@ export const getProjects = () => async (dispatch) => {
 export const fetchDetailProject = (id) => async (dispatch) => {
     try {
 
-        const response = await axios.get(`http://localhost:3001/project/${id}`);
+        const response = await axios.get(`/project/${id}`);
         const detailProject = response.data;
         dispatch(getProjectDetail(detailProject));
     } catch (error) {
