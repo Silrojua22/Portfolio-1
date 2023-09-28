@@ -81,6 +81,31 @@ const About = () => {
             When I'm not coding, you can find me enjoying outdoor activities,
             reading tech blogs, and experimenting with new coding projects.
           </p>
+
+          {/* Enlaces aquí */}
+          <div className="mt-4">
+            <span className="ml-10">
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="src/assets/Silvio Juarez CV-English.pdf"
+                className="text-green-700 hover:underline p-4"
+              >
+                Resume English
+              </a>
+            </span>
+            |
+            <span>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="src/assets/CV- Silvio Juarez - Fullstack developer.pdf"
+                className="text-green-700 hover:underline p-4"
+              >
+                Resume Spanish
+              </a>
+            </span>
+          </div>
         </div>
       </div>
     </section>
