@@ -2,9 +2,8 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
     allProjects: [],
-    projectDetail: [],
+    projectDetail: null,
     filteredProjects: [],
-
 };
 
 export const projectSlice = createSlice({
@@ -12,23 +11,19 @@ export const projectSlice = createSlice({
     initialState,
     reducers: {
         getAllProjects: (state, action) => {
-            const allProjects = action.payload;
-            state.allProjects = allProjects;
+            state.allProjects = action.payload;
         },
-
         getProjectByName: (state, action) => {
             if (action.payload !== "") {
                 state.filteredProjects = action.payload;
             } else {
-                state.allProjects;
+                state.filteredProjects = state.allProjects;
             }
         },
         getProjectDetail: (state, action) => {
-            const projectDetail = action.payload
-            state.projectDetail = projectDetail;
-        }
-
-    }
+            state.projectDetail = action.payload;
+        },
+    },
 });
 
 export const {
@@ -36,6 +31,5 @@ export const {
     getProjectByName,
     getProjectDetail,
 } = projectSlice.actions;
-
 
 export default projectSlice.reducer;

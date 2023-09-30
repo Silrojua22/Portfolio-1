@@ -21,35 +21,57 @@ const DetailProject = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen">
+    <div className="flex flex-col items-center min-h-screen py-4">
       {projectDetail ? (
-        <>
-          <div className="md:w-3/5 p-4 ml-20">
-            {" "}
-            {/* Añade ml-20 para mover la información hacia la izquierda */}
-            <h1 className="text-2xl font-bold mb-4 font-mono text-green-700">
-              {projectDetail.name}
-            </h1>
-            <p className="text-gray-700">{projectDetail.description}</p>
-            <button
-              onClick={handleBack}
-              className="text-white bg-green-700 py-2 px-4 rounded font-mono mt-4"
-            >
-              Volver a Proyectos
-            </button>
+        <div className="max-w-screen-xl mx-auto p-4">
+          <h1 className="text-2xl font-bold mb-4 font-mono text-green-700 underline text-center">
+            {projectDetail.name}
+          </h1>
+          <div className="lg:flex lg:flex-row lg:space-x-8 lg:items-center p-4">
+            <div className="lg:w-1/2 mb-4">
+              <img
+                src={projectDetail.img}
+                alt={projectDetail.name}
+                className="w-full rounded-lg shadow-lg border border-green-700"
+              />
+            </div>
+            <div className="lg:w-1/2">
+              <p className="text-green-700 mb-4">
+                <span className="text-xl font-bold">Description:</span>{" "}
+                {projectDetail.description}
+              </p>
+              <p className="text-green-700 mb-4">
+                <span className="text-xl font-bold">Code:</span>{" "}
+                <a
+                  href={projectDetail.code}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 underline"
+                >
+                  {projectDetail.code}
+                </a>
+              </p>
+              <p className="text-green-700 mb-4">
+                <span className="text-xl font-bold">Technologies:</span>{" "}
+                {projectDetail.technologies}
+              </p>
+              <p className="text-green-700 mb-4">
+                <span className="text-xl font-bold">Project Type:</span>{" "}
+                {projectDetail.projectType}
+              </p>
+              <div className="flex justify-center">
+                <button
+                  onClick={handleBack}
+                  className="text-white bg-green-700 py-2 px-4 rounded font-mono mt-4"
+                >
+                  Back
+                </button>
+              </div>
+            </div>
           </div>
-          <div className="md:w-2/5 mr-20">
-            {" "}
-            {/* Añade mr-20 para mover la imagen hacia la derecha */}
-            <img
-              src={projectDetail.img}
-              alt={projectDetail.name}
-              className="w-full rounded-lg shadow-lg mb-4 border border-green-700"
-            />
-          </div>
-        </>
+        </div>
       ) : (
-        <p className="text-red-500">No se encontró el proyecto.</p>
+        <p className="text-red-500">The project was not found.</p>
       )}
     </div>
   );

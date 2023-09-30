@@ -21,5 +21,18 @@ module.exports = (sequelize) => {
             type: DataTypes.TEXT,
             allowNull: false,
         },
+        code: {
+            type: DataTypes.STRING,
+            allowNull: true,
+            isURL: true,
+        },
+        technologies: {
+            type: DataTypes.STRING,
+            allowNull: true,
+        },
+        projectType: {
+            type: DataTypes.STRING,
+            allowNull: true,
+        },
     });
 };
