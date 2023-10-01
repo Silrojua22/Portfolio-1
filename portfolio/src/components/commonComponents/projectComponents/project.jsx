@@ -16,7 +16,7 @@ function Project({ id, name, img, description, allproject }) {
   };
 
   const handleMoreInfoClick = () => {
-    navigate(`/detailProject/${id}`); // Utilizar el ID del proyecto en la URL
+    navigate(`/detailProject/${id}`);
   };
 
   useEffect(() => {
@@ -33,7 +33,7 @@ function Project({ id, name, img, description, allproject }) {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <h2 className="font-mono font-bold text-green-700 text-2xl py-6">
+      <h2 className="font-mono font-bold text-green-700 text-xl sm:text-2xl py-6">
         {name}
       </h2>
       <img
