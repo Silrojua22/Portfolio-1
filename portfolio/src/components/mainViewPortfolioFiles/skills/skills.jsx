@@ -9,6 +9,7 @@ import { SiTailwindcss, SiMinutemailer, SiSequelize } from "react-icons/si";
 import { IoLogoNodejs } from "react-icons/io";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { AiOutlineConsoleSql } from "react-icons/ai";
+import { SiInsomnia } from "react-icons/si";
 
 const Skills = () => {
   const skillsSectionRef = useRef(null);
@@ -53,6 +54,8 @@ const Skills = () => {
         return <AiOutlineConsoleSql className="text-green-500 text-7xl" />;
       case "Sequelize":
         return <SiSequelize className="text-teal-400 text-7xl" />;
+      case "Insomnia":
+        return <SiInsomnia className="text-violet-600 text-7xl" />;
       default:
         return null;
     }
@@ -118,6 +121,7 @@ const Skills = () => {
         "Node.js",
         "Express",
         "Nodemailer",
+        "Insomnia",
       ])}
       {renderTechnologySection("Database", ["PostgreSQL", "SQL", "Sequelize"])}
     </section>
