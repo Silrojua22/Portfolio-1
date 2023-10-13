@@ -9,7 +9,8 @@ import { SiTailwindcss, SiMinutemailer, SiSequelize } from "react-icons/si";
 import { IoLogoNodejs } from "react-icons/io";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { AiOutlineConsoleSql } from "react-icons/ai";
-import { SiInsomnia } from "react-icons/si";
+import { SiInsomnia, SiJavascript, SiMariadbfoundation } from "react-icons/si";
+import { FaPhp, FaLaravel } from "react-icons/fa";
 
 const Skills = () => {
   const skillsSectionRef = useRef(null);
@@ -48,6 +49,8 @@ const Skills = () => {
         return <IoLogoNodejs className="text-green-500 text-7xl" />;
       case "Nodemailer":
         return <SiMinutemailer className="text-green-500 text-7xl" />;
+      case "Laravel":
+        return <FaLaravel className="text-red-500 text-7xl" />;
       case "PostgreSQL":
         return <BiLogoPostgresql className="text-blue-500 text-7xl" />;
       case "SQL":
@@ -56,6 +59,12 @@ const Skills = () => {
         return <SiSequelize className="text-teal-400 text-7xl" />;
       case "Insomnia":
         return <SiInsomnia className="text-violet-600 text-7xl" />;
+      case "MariaDB":
+        return <SiMariadbfoundation className="text-blue-700 text-7xl" />;
+      case "PHP":
+        return <FaPhp className=" text-blue-500 text-7xl" />;
+      case "JavaScrip":
+        return <SiJavascript className="text-yellow-600 text-7xl" />;
       default:
         return null;
     }
@@ -104,26 +113,33 @@ const Skills = () => {
   return (
     <section
       id="skills-section"
-      className="py-24 grid grid-cols-3 gap-4 text-center"
+      className="py-24 grid grid-cols-4 gap-4 text-center"
       ref={skillsSectionRef}
     >
-      <div className="col-span-3 mb-8">
+      <div className="col-span-4 mb-8">
         <h2 className="text-2xl font-bold font-mono text-green-700">Skills</h2>
       </div>
-
+      {renderTechnologySection("Languages", ["JavaScrip", "PHP"])}
       {renderTechnologySection("Front end", [
         "React",
         "HTML/CSS",
         "Redux",
         "TailwindCss",
+        "Blade",
       ])}
       {renderTechnologySection("Back end", [
         "Node.js",
         "Express",
+        "Laravel",
         "Nodemailer",
         "Insomnia",
       ])}
-      {renderTechnologySection("Database", ["PostgreSQL", "SQL", "Sequelize"])}
+      {renderTechnologySection("Database", [
+        "PostgreSQL",
+        "SQL",
+        "Sequelize",
+        "MariaDB",
+      ])}
     </section>
   );
 };
