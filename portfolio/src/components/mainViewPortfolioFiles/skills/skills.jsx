@@ -125,7 +125,6 @@ const Skills = () => {
         "HTML/CSS",
         "Redux",
         "TailwindCss",
-        "Blade",
       ])}
       {renderTechnologySection("Back end", [
         "Node.js",
