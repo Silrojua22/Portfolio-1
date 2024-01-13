@@ -18,7 +18,6 @@ function Project({ id, name, img, description, allproject }) {
   const handleMoreInfoClick = () => {
     navigate(`/detailProject/${id}`);
   };
-  console.log("La info => ", handleMoreInfoClick);
   useEffect(() => {
     projectDetail?.map((item) => {
       if (item.ProjectId === id) {

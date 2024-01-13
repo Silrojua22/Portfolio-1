@@ -1,10 +1,17 @@
 import { useEffect, useState, useRef } from "react";
 import { Link } from "react-scroll";
+import { getProjects } from "../../../redux/projectActions.js/";
 import About from "../about/about.jsx";
 import Skills from "../skills/skills.jsx";
 import Projects from "../projects/projects.jsx";
 import Contact from "../contact/contact.jsx";
+import { useDispatch, useSelector } from "react-redux";
+import axios from "axios";
+
 const Home = () => {
+  const allProject = useSelector((state) => state.projectReducer.allproject);
+  const dispatch = useDispatch();
+
   const [typedText, setTypedText] = useState("");
   const fullText = "Hi! My name is Silvio Rodrigo Juarez";
   const homeSectionRef = useRef(null);
@@ -27,7 +34,13 @@ const Home = () => {
       clearInterval(interval);
     };
   }, []);
-
+  useEffect(() => {
+    if (!allProject) {
+      axios.get("/api").then(() => dispatch(getProjects()));
+    } else {
+      dispatch(getProjects());
+    }
+  }, [dispatch]);
   return (
     <section
       id="home-section"

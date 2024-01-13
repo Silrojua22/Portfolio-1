@@ -8,7 +8,6 @@ const Projects = () => {
   const projectSection = useRef(null);
   const dispatch = useDispatch();
   const [selectedProject, setSelectedProject] = useState(null);
-  console.log(selectedProject);
 
   useEffect(() => {
     dispatch(getProjects());
