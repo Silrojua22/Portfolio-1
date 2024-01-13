@@ -17,7 +17,7 @@ projectData = [
     },
     {
         name: "Business_Manager",
-        img: "https://res.cloudinary.com/dgcmyiqup/image/upload/v1698771437/db6980da-30bb-44e7-9cff-e34c98697bf9_poppfp.jpg",
+        img: "https://res.cloudinary.com/dgcmyiqup/image/upload/v1705121983/0ab0adfa-0112-4d34-9c8a-ac891d83a50c_gipf9z.jpg",
         projectType: "Business_Manager",
         description:
             "This project aims to extract key information from Excel files related to the management of businesses. The primary goal is to optimize business management by allowing the structured collection of relevant data. This data is stored in a local database, facilitating detailed tracking and contributing to improved efficiency in business administration. This automated process streamlines decision-making and provides a more accurate view of business management, resulting in more effective management and better decision-making in the business environment.",
