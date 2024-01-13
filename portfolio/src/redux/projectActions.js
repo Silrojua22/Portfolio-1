@@ -10,7 +10,8 @@ export const getProjects = () => async (dispatch) => {
     try {
         const response = await axios.get("/project");
         const allProjects = response.data;
-        dispatch(getAllProjects(allProjects));
+        console.log(allProjects);
+        dispatch(getAllProjects(allProjects)); 12121
     } catch (error) {
         console.log(error);
     }
