@@ -11,7 +11,7 @@ const DetailProject = () => {
   const projectDetail = useSelector(
     (state) => state.projectReducer.projectDetail
   );
-
+  console.log("Detalle => ", projectDetail);
   useEffect(() => {
     dispatch(fetchDetailProject(id));
   }, [dispatch, id]);

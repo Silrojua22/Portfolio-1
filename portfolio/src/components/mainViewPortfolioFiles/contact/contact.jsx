@@ -9,7 +9,7 @@ const Contact = () => {
     <section
       id="contact-section"
       ref={contactSectionRef}
-      className="w-screen h-screen flex flex-col justify-center items-center font-mono bg-black border-2  border-green-700 border-t border-b"
+      className="w-screen h-screen flex flex-col justify-center items-center font-mono bg-black"
     >
       <div className="text-center flex flex-col justify-center items-center">
         <h1 className="text-2xl md:text-2xl lg:text-2xl font-bold underline">
