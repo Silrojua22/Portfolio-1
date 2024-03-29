@@ -88,7 +88,7 @@ const About = () => {
               <a
                 rel="noreferrer"
                 target="_blank"
-                href="/Silvio Juarez CV-English.pdf"
+                href="/CV- FullStack-SRJ-English.pdf"
                 className="text-green-700 hover:underline p-4"
               >
                 Resume English
@@ -99,7 +99,7 @@ const About = () => {
               <a
                 rel="noreferrer"
                 target="_blank"
-                href="/CV- Silvio Juarez - Fullstack developer.pdf"
+                href="/CV- FullStack-SRJ-Spanish.pdf"
                 className="text-green-700 hover:underline p-4"
               >
                 Resume Spanish
