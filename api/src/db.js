@@ -1,6 +1,7 @@
 require("dotenv").config();
 const { Sequelize } = require("sequelize");
 const ProjectFunction = require("./model/Project.js");
+const pg = require("pg");
 
 // const { DB_USER, DB_PASSWORD, DB_HOST, DB_NAME, DB_PORT } = process.env;
 const { DB_URL } = process.env;
