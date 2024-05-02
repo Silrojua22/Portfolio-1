@@ -1,20 +1,13 @@
 require("dotenv").config();
 const { Sequelize } = require("sequelize");
 const ProjectFunction = require("./model/Project.js");
-const pg = require("pg");
 
-// const { DB_USER, DB_PASSWORD, DB_HOST, DB_NAME, DB_PORT } = process.env;
-const { DB_URL } = process.env;
+const { DB_USER, DB_PASSWORD, DB_HOST, DB_NAME, DB_PORT } = process.env;
 
-const sequelize = new Sequelize(DB_URL, {
-  logging: false,
-  dialectModule: pg,
-});
-
-// const sequelize = new Sequelize(
-//     `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}`,
-//     { logging: false }
-// );
+const sequelize = new Sequelize(
+  `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}`,
+  { logging: false }
+);
 
 ProjectFunction(sequelize);
 
